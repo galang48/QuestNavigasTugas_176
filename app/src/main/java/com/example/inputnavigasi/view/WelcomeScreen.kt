@@ -20,6 +20,7 @@ import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.material3.Button
 
 @Composable
 fun WelcomeScreen(onMasuk: () -> Unit) {
@@ -47,11 +48,12 @@ fun WelcomeScreen(onMasuk: () -> Unit) {
                         .aspectRatio(1f),
                     contentScale = ContentScale.Fit
                 )
-
-
-
             }
-
+            Button(
+                onClick = onMasuk,
+                modifier = Modifier
+                    .fillMaxWidth()
+            ) { Text("Masuk") }
             }
         }
     }

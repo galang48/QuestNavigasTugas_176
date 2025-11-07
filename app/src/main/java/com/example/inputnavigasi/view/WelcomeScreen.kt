@@ -23,7 +23,10 @@ fun WelcomeScreen(onMasuk: () -> Unit) {
             verticalArrangement = Arrangement.SpaceBetween,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Spacer(Modifier.height(dimensionResource(id = R.dimen.padding_small)))
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
 
+            }
 
             }
         }

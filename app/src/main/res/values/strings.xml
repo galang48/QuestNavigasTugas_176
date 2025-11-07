@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">InputNavigasi</string>
     <string name="tampil">Tampil</string>
+    <string name="nama_lengkap">NAMA LENGKAP</string>
 </resources>

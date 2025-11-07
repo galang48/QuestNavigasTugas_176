@@ -15,6 +15,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.material3.Text
 import androidx.compose.ui.unit.sp
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 
 @Composable
 fun WelcomeScreen(onMasuk: () -> Unit) {
@@ -33,6 +38,16 @@ fun WelcomeScreen(onMasuk: () -> Unit) {
                     fontSize = 18.sp,
                     color = MaterialTheme.colorScheme.onBackground.copy(alpha = .6f)
                 )
+                Spacer(Modifier.height(dimensionResource(id = R.dimen.padding_small)))
+                Image(
+                    painter = painterResource(R.drawable.ruby),
+                    contentDescription = "CARD-LST",
+                    modifier = Modifier
+                        .fillMaxWidth(0.75f)
+                        .aspectRatio(1f),
+                    contentScale = ContentScale.Fit
+                )
+
 
 
             }

@@ -12,6 +12,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import com.example.inputnavigasi.R
 import androidx.compose.ui.Alignment
+import androidx.compose.material3.Text
+import androidx.compose.ui.unit.sp
+import androidx.compose.material3.MaterialTheme
 
 @Composable
 fun WelcomeScreen(onMasuk: () -> Unit) {
@@ -25,6 +28,12 @@ fun WelcomeScreen(onMasuk: () -> Unit) {
         ) {
             Spacer(Modifier.height(dimensionResource(id = R.dimen.padding_small)))
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Text(
+                    "Selamat Datang",
+                    fontSize = 18.sp,
+                    color = MaterialTheme.colorScheme.onBackground.copy(alpha = .6f)
+                )
+
 
             }
 
